@@ -3,14 +3,14 @@
 argv is a nodejs module that does command line argument parsing.
 
 
-# Installation
+### Installation
 
 ```bash
 $ npm install argv
 ```
 
 
-# Usage
+### Usage
 
 ```js
 var argv = require( 'argv' );
@@ -19,7 +19,7 @@ var args = argv.option( options ).run();
 ```
 
 
-# Run
+### Run
 
 Runs the argument parser on the global arguments. Custom arguments array can be used by passing into this method
 
@@ -32,7 +32,7 @@ argv.run([ '--option=123', '-o', '123' ]);
 ```
 
 
-# Options
+### Options
 
 argv is a strict argument parser, which means all options must be defined before parsing starts.
 
@@ -47,7 +47,7 @@ argv.option({
 ```
 
 
-# Modules
+### Modules
 
 Modules are nested commands for more complicated scripts. Each module has it's own set of options that
 have to be defined independently of the root options.
@@ -61,27 +61,39 @@ argv.mod({
 ```
 
 
-# Types
+### Types
 
 Types convert option values to useful js objects. They are defined along with each option.
 
-* **string** Ensure values are strings
-* **path** Converts value into a fully resolved path.
-* **int** Converts value into an integer
-* **float** Converts value into a float number
-* **boolean** Converts a value into a boolean object. 'true' and '1' are converted to true, everything else if false.
-* **csv** Converts a value into an array by splitting on comma's.
-* **list** Allows for option to be defined multiple times, and each value added to an array
-* **[list|csv],[type]** Combo type that allows you to create a list or csv and convert each individual value into a type.
+* **string**: Ensure values are strings
+* **path**: Converts value into a fully resolved path.
+* **int**: Converts value into an integer
+* **float**: Converts value into a float number
+* **boolean**: Converts value into a boolean object. 'true' and '1' are converted to true, everything else is false.
+* **csv**: Converts value into an array by splitting on comma's.
+* **list**: Allows for option to be defined multiple times, and each value added to an array
+* **[list|csv],[type]**: Combo type that allows you to create a list or csv and convert each individual value into a type.
 
-```bash
-// csv and string combo
-$ script --option=val1,val2,val3
--> option: [ val1, val2, val3 ]
+```js
+argv.option([
+	{
+		name: 'option',
+		type: 'csv,int'
+	},
+	{
+		name: 'path',
+		short: 'p',
+		type: 'list,path'
+	}
+]);
+
+// csv and int combo
+$ script --option=123,456.001,789.01
+-> option: [ 123, 456, 789 ]
 
 // list and path combo
-$ script -o /path/to/file1 -o /path/to/file2
--> option: [ /path/to/file1, /path/to/file2 ]
+$ script -p /path/to/file1 -p /path/to/file2
+-> option: [ '/path/to/file1', '/path/to/file2' ]
 ```
 
 You can also create your own custom type for special conversions.
@@ -103,7 +115,7 @@ $ script -s 2
 ```
 
 
-# Version
+### Version
 
 Defining the scripts version number will add the version option and print it out when asked.
 
@@ -116,7 +128,7 @@ v1.0
 ```
 
 
-# Info
+### Info
 
 Custom information can be displayed at the top of the help printout using this method
 
@@ -131,7 +143,7 @@ Special script info
 ```
 
 
-# Clear
+### Clear
 
 If you have competing scripts accessing the argv object, you can clear out any previous options that may have been set.
 
@@ -140,7 +152,7 @@ argv.clear().option( [new options] );
 ```
 
 
-# Help
+### Help
 
 argv injects a default help option initially and on clears. The help() method triggers the help printout.
 
