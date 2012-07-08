@@ -1,7 +1,7 @@
 {
 	"name": "argv",
 	"description": "CLI Argument Parser",
-	"url": "https://github.com/codenothing/argv",
+	"url": "http://codenothing.github.com/argv/",
 	"keywords": [ "cli", "argv", "options" ],
 	"author": "Corey Hart <corey@codenothing.com>",
 	"version": "0.0.1",
