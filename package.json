@@ -12,6 +12,5 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"nlint": "0.0.1"
 	}
 }
