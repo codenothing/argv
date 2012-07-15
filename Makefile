@@ -4,4 +4,4 @@
 all: lint
 
 lint:
-	@nlint .
+	@node build/lint.js
