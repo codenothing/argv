@@ -12,6 +12,7 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"nlint": "0.0.2"
+		"nlint": "0.0.2",
+		"munit": "0.0.1"
 	}
 }

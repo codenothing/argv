@@ -1,7 +1,10 @@
 .PHONY: all test
 
 
-all: lint
+all: test
 
 lint:
 	@node build/lint.js
+
+test: lint
+	@node test/core.js
