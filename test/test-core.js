@@ -1,9 +1,3 @@
-global.MUnit = require( 'munit' );
-global.argv = require( '../' );
-
-
-
-// Root level tests
 MUnit( 'Root.Options', function( assert ) {
 	argv.clear().option([
 
@@ -172,13 +166,3 @@ MUnit( 'Root.Options', function( assert ) {
 		}
 	});
 });
-
-
-// Load up module tests
-require( './mods.js' );
-
-// Load up custom type tests
-require( './custom.js' );
-
-// All tests are loaded, render the modules
-MUnit.render();
