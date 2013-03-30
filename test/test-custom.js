@@ -1,4 +1,4 @@
-MUnit( 'Custom', function( assert ) {
+munit( 'Custom', function( assert ) {
 	// Add custom types
 	argv.type({
 

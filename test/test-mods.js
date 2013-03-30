@@ -1,4 +1,4 @@
-MUnit( 'Modules', function( assert ) {
+munit( 'Modules', function( assert ) {
 	argv.clear().option([
 
 		{

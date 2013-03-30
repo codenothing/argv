@@ -9,10 +9,13 @@
 	"engines": {
 		"node": ">=0.6.10"
 	},
+	"scripts": {
+		"test": "make test"
+	},
 	"dependencies": {
 	},
 	"devDependencies": {
-		"nlint": "0.0.3",
-		"munit": "0.0.1"
+		"nlint": "0.0.4",
+		"munit": "0.0.3"
 	}
 }

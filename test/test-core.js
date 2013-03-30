@@ -1,4 +1,4 @@
-MUnit( 'Root.Options', function( assert ) {
+munit( 'Root.Options', function( assert ) {
 	argv.clear().option([
 
 		{
