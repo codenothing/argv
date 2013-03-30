@@ -2,7 +2,7 @@
 
 argv is a nodejs module that does command line argument parsing.  
   
-[![Build Status](https://travis-ci.org/codenothing/argv.png)](https://travis-ci.org/codenothing/argv)  
+[![Build Status](https://travis-ci.org/codenothing/argv.png?branch=master)](https://travis-ci.org/codenothing/argv)  
 
 ### Installation
 
