@@ -1,0 +1,1 @@
+global.argv = require( '../' );

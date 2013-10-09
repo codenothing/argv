@@ -1,0 +1,10 @@
+{
+	"linters": {
+		"jshint": {
+			"predef": {
+				"munit": false,
+				"argv": false
+			}
+		}
+	}
+}

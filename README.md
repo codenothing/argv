@@ -68,9 +68,9 @@ Types convert option values to useful js objects. They are defined along with ea
 
 * **string**: Ensure values are strings
 * **path**: Converts value into a fully resolved path.
-* **int**: Converts value into an integer
+* **integer | int**: Converts value into an integer
 * **float**: Converts value into a float number
-* **boolean**: Converts value into a boolean object. 'true' and '1' are converted to true, everything else is false.
+* **boolean | bool**: Converts value into a boolean object. 'true' and '1' are converted to true, everything else is false.
 * **csv**: Converts value into an array by splitting on comma's.
 * **list**: Allows for option to be defined multiple times, and each value added to an array
 * **[list|csv],[type]**: Combo type that allows you to create a list or csv and convert each individual value into a type.

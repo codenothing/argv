@@ -1,5 +1,4 @@
-global.munit = require( 'munit' );
-global.argv = require( '../' );
+var munit = global.munit = require( 'munit' );
 
 // Only stop test suite when running make test
 if ( ! process.env.NODE_TEST_NO_SKIP ) {
@@ -8,6 +7,5 @@ if ( ! process.env.NODE_TEST_NO_SKIP ) {
 
 // Render all tests
 munit.render( __dirname + '/../test/', {
-	junit: __dirname + '/results/',
-	junitPrefix: process.version.replace( /\./g, '_' )
+	results: __dirname + '/results/'
 });

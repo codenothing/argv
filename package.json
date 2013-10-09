@@ -4,7 +4,7 @@
 	"url": "http://codenothing.github.com/argv/",
 	"keywords": [ "cli", "argv", "options" ],
 	"author": "Corey Hart <corey@codenothing.com>",
-	"version": "0.0.2",
+	"version": "0.0.3pre",
 	"main": "./index.js",
 	"engines": {
 		"node": ">=0.6.10"
@@ -15,7 +15,7 @@
 	"dependencies": {
 	},
 	"devDependencies": {
-		"nlint": "0.0.4",
-		"munit": "0.0.5"
+		"nlint": "0.0.6",
+		"munit": "0.0.7"
 	}
 }
