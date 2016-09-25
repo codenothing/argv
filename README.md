@@ -1,22 +1,19 @@
-# argv
+# argv-me
 
-argv is a nodejs module that does command line argument parsing.  
+argv-me is a nodejs module that does command line argument parsing. 
+Forked from [argv](https://www.npmjs.com/package/argv) to wrap the help text output at 80 characters. 
   
-[![NPM version](https://badge.fury.io/js/argv.png)](http://badge.fury.io/js/argv)
-[![Build Status](https://travis-ci.org/codenothing/argv.png?branch=master)](https://travis-ci.org/codenothing/argv)
-[![Code Climate](https://codeclimate.com/github/codenothing/argv.png)](https://codeclimate.com/github/codenothing/argv)
-
 ### Installation
 
 ```bash
-$ npm install argv
+$ npm install argv-me
 ```
 
 
 ### Usage
 
 ```js
-var argv = require( 'argv' );
+var argv = require( 'argv-me' );
 var args = argv.option( options ).run();
 -> { targets: [], options: {} }
 ```
@@ -157,7 +154,7 @@ argv.clear().option( [new options] );
 
 ### Help
 
-argv injects a default help option initially and on clears. The help() method triggers the help printout.
+argv-me injects a default help option initially and on clears. The help() method triggers the help printout.
 
 ```js
 argv.help();

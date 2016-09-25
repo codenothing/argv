@@ -1,15 +1,16 @@
 {
-  "name": "argv",
+  "name": "argv-me",
   "description": "CLI Argument Parser",
-  "url": "http://codenothing.github.com/argv/",
   "keywords": [
     "cli",
     "argv",
     "options"
   ],
-  "author": "Corey Hart <corey@codenothing.com>",
+  "author": {"name": "Kaspar Emanuel"},
+  "contributors": [{"name":"Corey Hart", "email":"corey@codenothing.com"}],
   "version": "0.0.3pre",
-  "main": "./index.js",
+  "main": "lib/index.js",
+  "repository": "https://github.com/kasbah/argv-me",
   "engines": {
     "node": ">=0.6.10"
   },
