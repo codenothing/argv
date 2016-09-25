@@ -16,9 +16,6 @@
   "scripts": {
     "test": "make test"
   },
-  "dependencies": {
-    "word-wrap": "^1.1.0"
-  },
   "devDependencies": {
     "nlint": "0.0.6",
     "munit": "0.0.7"
