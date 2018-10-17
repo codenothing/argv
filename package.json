@@ -4,6 +4,7 @@
 	"url": "http://codenothing.github.com/argv/",
 	"keywords": [ "cli", "argv", "options" ],
 	"author": "Corey Hart <corey@codenothing.com>",
+	"license": "MIT",
 	"version": "0.0.3pre",
 	"main": "./index.js",
 	"engines": {
