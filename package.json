@@ -1,21 +1,39 @@
 {
-	"name": "argv",
-	"description": "CLI Argument Parser",
-	"homepage": "http://codenothing.github.com/argv/",
-	"keywords": [ "cli", "argv", "options" ],
-	"author": "Corey Hart <corey@codenothing.com>",
-	"version": "0.0.3pre",
-	"main": "./index.js",
-	"engines": {
-		"node": ">=0.6.10"
-	},
-	"scripts": {
-		"test": "make test"
-	},
-	"dependencies": {
-	},
-	"devDependencies": {
-		"nlint": "0.0.6",
-		"munit": "0.0.7"
-	}
+  "name": "argv",
+  "description": "CLI Argument Parser",
+  "author": "Corey Hart <corey@codenothing.com>",
+  "version": "0.0.3",
+  "main": "./index.js",
+  "homepage": "http://codenothing.github.com/argv/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codenothing/argv.git"
+  },
+  "keywords": [
+    "cli",
+    "argv",
+    "options"
+  ],
+  "files": [
+    "lib",
+    "index.js",
+    "package.json",
+    "package-lock.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=0.6.10"
+  },
+  "scripts": {
+    "clean": "rm -rf build/results",
+    "lint": "node build/lint.js",
+    "test": "npm run clean && npm run lint && node build/test.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nlint": "0.0.6",
+    "munit": "0.0.7"
+  }
 }

@@ -1,17 +1,14 @@
+[![NPM version](https://badge.fury.io/js/argv.png)](http://badge.fury.io/js/argv) ![Test Runner](https://github.com/github/docs/actions/workflows/main.yml/badge.svg) [![Code Climate](https://codeclimate.com/github/codenothing/argv.png)](https://codeclimate.com/github/codenothing/argv)
+
 # argv
 
-argv is a nodejs module that does command line argument parsing.  
-  
-[![NPM version](https://badge.fury.io/js/argv.png)](http://badge.fury.io/js/argv)
-[![Build Status](https://travis-ci.org/codenothing/argv.png?branch=master)](https://travis-ci.org/codenothing/argv)
-[![Code Climate](https://codeclimate.com/github/codenothing/argv.png)](https://codeclimate.com/github/codenothing/argv)
+`argv` is a simple, zero dependency, command line argument parser for NodeJS. For a more feature-full CLI parser, checkout [Commander.js](https://www.npmjs.com/package/commander) or [Yargs](https://www.npmjs.com/package/yargs)
 
 ### Installation
 
 ```bash
 $ npm install argv
 ```
-
 
 ### Usage
 
@@ -20,7 +17,6 @@ var argv = require( 'argv' );
 var args = argv.option( options ).run();
 -> { targets: [], options: {} }
 ```
-
 
 ### Run
 
@@ -31,24 +27,22 @@ Runs the argument parser on the global arguments. Custom arguments array can be 
 argv.run();
 
 // Parses array instead
-argv.run([ '--option=123', '-o', '123' ]);
+argv.run(["--option=123", "-o", "123"]);
 ```
-
 
 ### Options
 
-argv is a strict argument parser, which means all options must be defined before parsing starts.
+`argv` is a strict argument parser, which means all options must be defined before parsing starts.
 
 ```js
 argv.option({
-	name: 'option',
-	short: 'o',
-	type: 'string',
-	description: 'Defines an option for your script',
-	example: "'script --option=value' or 'script -o value'"
+  name: "option",
+  short: "o",
+  type: "string",
+  description: "Defines an option for your script",
+  example: "'script --option=value' or 'script -o value'",
 });
 ```
-
 
 ### Modules
 
@@ -63,19 +57,18 @@ argv.mod({
 });
 ```
 
-
 ### Types
 
-Types convert option values to useful js objects. They are defined along with each option.
+Types convert option values to useful JS objects. They are defined along with each option.
 
-* **string**: Ensure values are strings
-* **path**: Converts value into a fully resolved path.
-* **integer | int**: Converts value into an integer
-* **float**: Converts value into a float number
-* **boolean | bool**: Converts value into a boolean object. 'true' and '1' are converted to true, everything else is false.
-* **csv**: Converts value into an array by splitting on comma's.
-* **list**: Allows for option to be defined multiple times, and each value added to an array
-* **[list|csv],[type]**: Combo type that allows you to create a list or csv and convert each individual value into a type.
+- `string`: Ensure values are strings
+- `path`: Converts value into a fully resolved path.
+- `integer | int`: Converts value into an integer
+- `float`: Converts value into a float number
+- `boolean | bool`: Converts value into a boolean object. 'true' and '1' are converted to true, everything else is false.
+- `csv`: Converts value into an array by splitting on comma's.
+- `list`: Allows for option to be defined multiple times, and each value added to an array
+- `[list|csv],[type]`: Combo type that allows you to create a list or csv and convert each individual value into a type.
 
 ```js
 argv.option([
@@ -117,7 +110,6 @@ $ script -s 2
 -> 4
 ```
 
-
 ### Version
 
 Defining the scripts version number will add the version option and print it out when asked.
@@ -129,7 +121,6 @@ $ script --version
 v1.0
 
 ```
-
 
 ### Info
 
@@ -145,25 +136,24 @@ Special script info
 ... Rest of Help Doc ...
 ```
 
-
 ### Clear
 
-If you have competing scripts accessing the argv object, you can clear out any previous options that may have been set.
+If you have competing scripts accessing the `argv` object, you can clear out any previous options that may have been set.
 
 ```js
-argv.clear().option( [new options] );
+argv.clear().option([new options()]);
 ```
-
 
 ### Help
 
-argv injects a default help option initially and on clears. The help() method triggers the help printout.
+`argv` injects a default help option initially and on clears. The help() method triggers the help printout.
 
 ```js
 argv.help();
 ```
 
-----
+---
+
 ### License
 
 ```
