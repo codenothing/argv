@@ -1,9 +1,10 @@
 {
   "name": "argv",
+  "version": "0.0.3",
   "description": "CLI Argument Parser",
   "author": "Corey Hart <corey@codenothing.com>",
-  "version": "0.0.3",
   "main": "./index.js",
+  "license": "MIT",
   "homepage": "http://codenothing.github.com/argv/",
   "repository": {
     "type": "git",

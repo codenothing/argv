@@ -41,6 +41,9 @@ argv.option({
   type: "string",
   description: "Defines an option for your script",
   example: "'script --option=value' or 'script -o value'",
+  onset: function (args) {
+    args; // Object of current arguments parsed
+  },
 });
 ```
 
