@@ -1,4 +1,4 @@
-[![NPM version](https://badge.fury.io/js/argv.png)](http://badge.fury.io/js/argv) ![Test Runner](https://github.com/github/docs/actions/workflows/main.yml/badge.svg) [![Code Climate](https://codeclimate.com/github/codenothing/argv.png)](https://codeclimate.com/github/codenothing/argv)
+[![NPM version](https://badge.fury.io/js/argv.png)](http://badge.fury.io/js/argv) ![Test Runner](https://github.com/codenothing/argv/actions/workflows/main.yml/badge.svg) [![Code Climate](https://codeclimate.com/github/codenothing/argv.png)](https://codeclimate.com/github/codenothing/argv)
 
 # argv
 
